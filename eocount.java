@@ -1,5 +1,5 @@
 import java.util.*;
-public class Even
+public class eocount
 {
 	public static void main(String[] args) {
 		int a[]=new int[5];
@@ -7,10 +7,17 @@ public class Even
 		for(int i=0;i<a.length;i++){
 		   a[i]=sc.nextInt();
 		}
+		int ecount=0;
+		int ocount=0;
 		for(int i=0;i<a.length;i++){
 		    if(a[i]%2==0){
-		        System.out.println(a[i]);
+		        ecount+=1;
+		    }
+		    else if(a[i]%2!=0){
+		        ocount+=1;
 		    }
 		}
-	}
-}
+		System.out.println(ecount);
+		System.out.println(ocount);
+		    }
+		}

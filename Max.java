@@ -1,5 +1,5 @@
 import java.util.*;
-public class Even
+public class Max
 {
 	public static void main(String[] args) {
 		int a[]=new int[5];
@@ -7,10 +7,12 @@ public class Even
 		for(int i=0;i<a.length;i++){
 		   a[i]=sc.nextInt();
 		}
+		int m=0;
 		for(int i=0;i<a.length;i++){
-		    if(a[i]%2==0){
-		        System.out.println(a[i]);
+		    if(a[i]>m){
+		        m=a[i];
 		    }
 		}
+		System.out.println(m);
 	}
 }
